@@ -1,0 +1,20 @@
+<!-- locations/templates/locations/waste_disposal_location_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waste Disposal Locations</title>
+</head>
+<body>
+    <h1>Waste Disposal Locations</h1>
+    <ul>
+        {% for location in locations %}
+            <li>
+                <strong>{{ location.name }}</strong><br>
+                Address: {{ location.address }}<br>
+                Operating Hours: {{ location.operating_hours }}<br>
+                Contact: {{ location.contact_number }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
